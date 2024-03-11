@@ -19,6 +19,7 @@
         img {
             border-radius: 100px;
             border: 5px solid var(--white);
+            margin-bottom: 15px;
         }
     }
 
@@ -69,10 +70,44 @@
                     a {
                         display: flex;
                         justify-content: center;
-                        align-items: center;
+                        align-items: flex-start;
                         flex-direction: column;
                     }
+
+                    p {
+                        margin: 3px 0;
+                    }
+
+                    strong {
+                        color: var(--primary);
+                    }
                 }
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+        aside {
+            nav {
+                ul {
+                    flex-direction: column;
+                    gap: 15px;
+
+                    li {
+                        &, a {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        section {
+            flex-direction: column;
+            gap: 15px;
+
+            figure {
+                width: 100%;
             }
         }
     }
